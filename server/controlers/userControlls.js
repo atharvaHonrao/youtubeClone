@@ -76,24 +76,18 @@ class UserControlsers {
                 pass: req.body.pass,
 
             })
-            console.log(req.body.name)
-            console.log(JSON.stringify(doc))
-
             await doc.save().then(() => {
-
                 console.log("success")
             }).catch((err) => {
                 // console.log
             })
-            console.log("jsod")
-
         } catch (error) {
             console.log(error)
 
         }
 
         // res.sendFile(path.join(__dirname + '/login.html'));
-        res.render('login')
+        res.redirect('/login');
 
 
     }
