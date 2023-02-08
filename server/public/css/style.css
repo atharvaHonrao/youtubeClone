@@ -9,7 +9,6 @@ body {
     background-color: rgb(53, 53, 53);
 }
 
-
 /* Navbar */
 
 nav li {
@@ -54,7 +53,6 @@ nav ul {
 }
 
 nav ul li a {
-
     padding: 0 10px;
     color: white;
     text-decoration: none;
@@ -84,8 +82,6 @@ nav ul li a {
 
 }
 
-
-
 #searchb i {
     position: relative;
     left: 4px;
@@ -110,6 +106,18 @@ nav ul li a {
 #search::-webkit-search-cancel-button {
     color: antiquewhite;
     background-color: aqua;
+}
+
+#add{
+    position: relative;
+    left: 1074px;
+}
+
+#add i{
+    color: aliceblue;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 3px;
 }
 
 #but {

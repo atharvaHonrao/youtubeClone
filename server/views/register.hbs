@@ -1,17 +1,56 @@
 {{> header}}
 {{> nav}}
+<div>
+    <form method="post">
+        <ul>
+            <li>
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                    </li>
+                    <li>
+                        <input id="name" type="text" name="name" required> </input>
+                    </li>
 
-<form method="post">
-
-    Name :<input id="name" type="text" name="name" required> </input><br>
-    Email:<input id="email" type="email" name="email" required> </input><br>
-    Phone number :<input id="phone" type="tel" name="phone" required></input><br>
-    Password:<input id="pass" type="password" name="pass" required></input>
-    <input type="submit"></input>
-
-</form>
-
-<div class="logo">
-    <img href="ytlogo.png" alt="yt">
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li>
+                        <label for="email">Email Id</label>
+                    </li>
+                    <li>
+                        <input id="email" type="text" name="email" required> </input>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li>
+                        <label for="phone">Phone Number</label>
+                    </li>
+                    <li>
+                        <input id="phone" type="text" name="phone" required></input>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li>
+                        <label for="pass">Password</label>
+                    </li>
+                    <li>
+                        <input id="pass" type="password" name="pass" required> </input>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="submit"></input>
+            </li>
+            <li>
+                <button id="loginatregis">Login</button>
+            </li>
+        </ul>
+    </form>
 </div>
 {{> footer}}
