@@ -15,7 +15,7 @@ nav li {
     list-style: none;
 }
 
-#logo{
+#logo {
 
     display: flex;
     position: relative;
@@ -23,7 +23,7 @@ nav li {
     left: 75px;
 }
 
-#ba a i{
+#ba a i {
 
     height: 21px;
     font-size: 22px;
@@ -69,7 +69,7 @@ nav ul li a {
     left: 264px;
 }
 
-#search input{
+#search input {
 
     width: 324px;
     height: 26px;
@@ -108,12 +108,12 @@ nav ul li a {
     background-color: aqua;
 }
 
-#add{
+#add {
     position: relative;
     left: 1074px;
 }
 
-#add i{
+#add i {
     color: aliceblue;
     border: 1px solid grey;
     border-radius: 20px;
@@ -134,4 +134,31 @@ nav ul li a {
     border: 1px grey solid;
     padding: 7px;
     border-radius: 15px;
+}
+
+.inputdiv {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    left: 809px;
+    top: 187px;
+}
+
+.textfield{
+
+    width: 204px;
+
+    /* position: relative;
+    left: 10px;
+    top: 10px; */
+}
+
+.uploadv{
+
+    /* padding: 12px; */
+    margin: 1px;
+
 }

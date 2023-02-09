@@ -29,6 +29,11 @@ class UserControlsers {
         res.render('home')
     }
 
+    static upload = async (req, res) => {
+
+        res.render('upload')
+    }
+
 
     static userlogin = async (req, res) => {
 

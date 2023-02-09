@@ -15,4 +15,6 @@ router.get('/login', UserControls.loginpage)
 
 router.post('/login', UserControls.userlogin)
 
+router.get('/upload', UserControls.upload)
+
 export default router
