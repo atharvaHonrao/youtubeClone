@@ -4,9 +4,8 @@ import UserControls from '../controlers/userControlls.js'
 
 router.get('/', UserControls.home)
 router.post('/', UserControls.homepost)
+router.post('/register', UserControls.homepost)
 router.get('/home', UserControls.homepage)
-
-
 
 router.get('/register', UserControls.home)
 

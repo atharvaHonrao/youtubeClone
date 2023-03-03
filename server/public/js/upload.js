@@ -1,1 +1,4 @@
-console.log("in uploads")
+function register (){
+
+    
+}

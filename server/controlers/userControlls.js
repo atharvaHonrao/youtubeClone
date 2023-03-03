@@ -1,10 +1,13 @@
 import alert from 'alert'
 // import popup from 'popup'
 import { dirname } from 'path';
-import path from 'path'
 import UserModel from '../models/user_schema.js'
-
+import Realm from "realm";
 import { fileURLToPath } from 'url';
+
+const app = new Realm.App({
+    id: "ytclone-ixvfb",
+});
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -37,34 +40,37 @@ class UserControlsers {
 
     static userlogin = async (req, res) => {
 
+        // try {
+        //     const { email, pass } = req.body;
+        //     const result = await UserModel.findOne({ email: email });
+        //     if (result == null) {
+        //        console.log("successful bc")
+        //     }
+        //     if (result.pass == pass) {
+        //         res.redirect('/home');
+        //         alert("Login Succesful!!");
+        //     }
+        //     else {
+        //         alert("Wrong Password");
+        //     }
+        // } catch (error) {
+        //     console.log(error)
+
+        // Initialize your App.  
+
         try {
-
-
             const { email, pass } = req.body;
-
             const result = await UserModel.findOne({ email: email });
+            await app.logIn(Realm.Credentials.emailPassword(email, pass));
+            
+          } catch (err) {
+            console.error("Failed to log in", err.message);
+          }
+          
+          const userEmail = app.currentUser.profile.email;
+          
 
-            if (result == null) {
-
-               console.log("successful bc")
-            }
-
-            if (result.pass == pass) {
-
-                res.redirect('/home');
-                alert("Login Succesful!!");
-            }
-            else {
-
-                alert("Wrong Password");
-            }
-
-
-
-        } catch (error) {
-            console.log(error)
-
-        }
+        
         // res.sendFile(path.join(__dirname + '/login.html'));
     }
 
@@ -81,6 +87,12 @@ class UserControlsers {
                 pass: req.body.pass,
 
             })
+
+            await app.emailPasswordAuth.registerUser({
+                email: email,
+                password: pass
+              });
+
             await doc.save().then(() => {
                 console.log("success")
             }).catch((err) => {
@@ -89,7 +101,7 @@ class UserControlsers {
         } catch (error) {
             console.log(error)
 
-        }
+        }          
 
         // res.sendFile(path.join(__dirname + '/login.html'));
         res.redirect('/login');
