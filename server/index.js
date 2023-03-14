@@ -31,10 +31,10 @@ app.set("view engine",'hbs')
 app.set("views", viewspath)
 hbs.registerPartials(partialpath)
 
-mon.connect(DB, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => { console.log("yeeeeeeeeeeeeee") }).catch(err => { console.log() })
+// mon.connect(DB, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true
+// }).then(() => { console.log("yeeeeeeeeeeeeee") }).catch(err => { console.log() })
 
 app.use('/', web);
 

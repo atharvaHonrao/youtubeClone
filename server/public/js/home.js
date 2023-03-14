@@ -7,3 +7,7 @@ function register(){
 
     console.log("In register")
 }
+
+function gotologin(){
+    console.log("Hiiiiiiiiiiii")
+}

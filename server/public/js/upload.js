@@ -1,4 +1,3 @@
-function register (){
-
-    
+function gotologin(){
+    console.log("Hiiiiiiiiiiii")
 }

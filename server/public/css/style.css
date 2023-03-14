@@ -9,6 +9,10 @@ body {
     background-color: #1a1a1a;
 }
 
+ul {
+    list-style-type: none;
+}
+
 /* Navbar */
 
 nav li {
@@ -150,7 +154,7 @@ nav ul li a {
     padding: 50px;
 }
 
-.textfield{
+.textfield {
 
     width: 204px;
 
@@ -159,9 +163,70 @@ nav ul li a {
     top: 10px; */
 }
 
-.uploadv{
+.uploadv {
 
     /* padding: 12px; */
     margin: 1px;
 
+}
+
+.labels {
+
+    color: #d3d3d3;
+    margin: 7px;
+    font-size: 18px;
+    font-family: 'Sono', sans-serif;
+}
+
+.inputs {
+    width: 214px;
+    height: 10px;
+    padding: 7px;
+    border: 1px #808080 solid;
+    border-radius: 5px;
+    background-color: #181818;
+    color: #d3d3d3;
+    text-decoration: none;
+    margin: 7px;
+    font-size: 14px;
+
+    font-family: 'Sono', sans-serif;
+}
+
+form {
+
+    margin: 20px 10px;
+    margin-bottom: 0px;
+}
+
+.butons {
+    background-color: #181818;
+    font-family: 'Sono', sans-serif;
+    border: 1px #808080 solid;
+    color: #d3d3d3;
+    margin: 7px;
+    width: 100px;
+    height: 25px;
+    margin-left: 64px;
+    border-radius: 10px;
+    font-size: 14px;
+
+}
+
+.buton {
+    background-color: #181818;
+    font-family: 'Sono', sans-serif;
+    border: 1px #808080 solid;
+    color: #d3d3d3;
+    margin: 7px;
+    width: 100px;
+    height: 25px;
+    margin-left: 74px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+#hi {
+    color: #d3d3d3;
+    text-decoration: none;
 }

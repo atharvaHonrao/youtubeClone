@@ -4,52 +4,38 @@
     <form method="post">
         <ul>
             <li>
-                <ul>
-                    <li>
-                        <label for="name">Name</label>
-                    </li>
-                    <li>
-                        <input id="name" type="text" name="name" required> </input>
-                    </li>
-                </ul>
+                <label class="labels" for="name">Name</label>
             </li>
             <li>
-                <ul>
-                    <li>
-                        <label for="email">Email Id</label>
-                    </li>
-                    <li>
-                        <input id="email" type="text" name="email" required> </input>
-                    </li>
-                </ul>
+                <input class="inputs" id="name" type="text" name="name"> </input>
             </li>
             <li>
-                <ul>
-                    <li>
-                        <label for="phone">Phone Number</label>
-                    </li>
-                    <li>
-                        <input id="phone" type="text" name="phone" required></input>
-                    </li>
-                </ul>
+                <label class="labels" for="email">Email Id</label>
             </li>
             <li>
-                <ul>
-                    <li>
-                        <label for="pass">Password</label>
-                    </li>
-                    <li>
-                        <input id="pass" type="password" name="pass" required> </input>
-                    </li>
-                </ul>
+                <input class="inputs" id="email" type="text" name="email"> </input>
             </li>
             <li>
-                <input type="submit"></input>
+                <label class="labels" for="phone">Phone Number</label>
             </li>
             <li>
-                <button id="loginatregis" onclick="register">Login</button>
+                <input class="inputs" id="phone" type="text" name="phone"></input>
+            </li>
+
+            <li>
+                <label class="labels" for="pass">Password</label>
+            </li>
+            <li>
+                <input class="inputs" id="pass" type="password" name="pass"> </input>
+            </li>
+
+            <li>
+                <input class="butons" type="submit"></input>
             </li>
         </ul>
     </form>
+    <button class="buton"><a id="hi"href="../login">Login</a></button>
+    
 </div>
+
 {{> footer}}

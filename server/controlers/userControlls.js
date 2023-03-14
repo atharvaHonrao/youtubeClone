@@ -79,25 +79,25 @@ class UserControlsers {
 
         try {
 
-            const doc = new UserModel({
+            // const doc = new UserModel({
 
-                name: req.body.name,
-                email: req.body.email,
-                phone: req.body.phone,
-                pass: req.body.pass,
+            //     name: req.body.name,
+            //     email: req.body.email,
+            //     phone: req.body.phone,
+            //     pass: req.body.pass,
 
-            })
+            // })
 
             await app.emailPasswordAuth.registerUser({
-                email: email,
-                password: pass
+                email: req.body.name,
+                password: req.body.pass
               });
 
-            await doc.save().then(() => {
-                console.log("success")
-            }).catch((err) => {
-                // console.log
-            })
+            // await doc.save().then(() => {
+            //     console.log("success")
+            // }).catch((err) => {
+            //     // console.log
+            // })
         } catch (error) {
             console.log(error)
 
